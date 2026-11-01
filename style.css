@@ -1,0 +1,85 @@
+/* ===== Dasar ===== */
+* { box-sizing: border-box; margin: 0; }
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  padding: 30px 16px;
+  background: linear-gradient(135deg, #6ba377, #75cfe6);
+}
+
+.container { max-width: 640px; margin: 0 auto; }
+
+/* ===== Judul ===== */
+.header { color: white; margin-bottom: 20px; }
+.header h1 { font-size: 30px; }
+.header span { color: #ffe066; }
+.header p { margin-top: 6px; color: #ffe8f0; }
+
+/* ===== Kartu daftar belanja ===== */
+.card {
+  padding: 20px; border-radius: 18px;
+  background: white; border-top: 8px solid #ffe066;
+}
+
+.kotak-tabel { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; }
+
+th {
+  padding: 8px 4px; text-align: left;
+  font-size: 13px; color: #0c4497;
+}
+
+td { padding: 4px; }
+
+input {
+  width: 100%; padding: 8px; font-size: 14px;
+  border: 2px solid #e0d4f7; border-radius: 8px;
+  background: #faf7ff;
+}
+input:focus { border-color: #ff6a88; outline: none; }
+
+.nama { min-width: 130px; }
+.harga { min-width: 90px; }
+.jumlah { width: 60px; }
+.diskon { width: 65px; }
+
+.sub {
+  min-width: 90px; font-weight: bold;
+  font-size: 14px; color: #1a5f48;
+}
+
+.btn-hapus {
+  width: 30px; height: 30px; border: none;
+  border-radius: 8px; background: #ff5d73;
+  color: white; font-size: 16px; cursor: pointer;
+}
+
+/* ===== Tombol ===== */
+.btn-tambah, .btn-reset {
+  margin-top: 14px; margin-right: 8px; padding: 10px 16px;
+  border: none; border-radius: 10px;
+  font-size: 14px; font-weight: bold; cursor: pointer;
+}
+.btn-tambah { background: #1565a7; color: white; }
+.btn-reset { background: #1565a7; color: #f1eff7; }
+.btn-tambah:hover, .btn-reset:hover { opacity: 0.85; }
+
+/* ===== Hasil ===== */
+.hasil {
+  margin-top: 18px; padding: 22px; border-radius: 18px;
+  background: #032f58; color: white;
+}
+.judul-hasil { color: #f9f7fc; font-size: 14px; }
+
+.total {
+  margin: 4px 0 14px; font-size: 38px;
+  font-weight: bold; color: #ffe066;
+}
+
+.rincian {
+  display: flex; justify-content: space-between;
+  padding: 10px 0; border-top: 2px dashed #f1691b;
+}
+.rincian:last-of-type b { color: #2ee6a6; }

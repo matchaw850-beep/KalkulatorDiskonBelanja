@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Diskon Belanja</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Judul -->
+    <div class="header">
+      <h1>Kalkulator <span>Diskon</span> Belanja</h1>
+      <p>Isi daftar belanja, total langsung dihitung.</p>
+    </div>
+
+    <!-- Daftar belanja -->
+    <div class="card">
+      <div class="kotak-tabel">
+        <table>
+          <thead>
+            <tr>
+              <th>Barang</th>
+              <th>Harga (Rp)</th>
+              <th>Jumlah</th>
+              <th>Diskon %</th>
+              <th>Subtotal</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="isi"></tbody>
+        </table>
+      </div>
+
+      <button class="btn-tambah" onclick="tambahBaris()">
+        + Tambah barang
+      </button>
+      <button class="btn-reset" onclick="resetSemua()">
+        Hapus semua
+      </button>
+    </div>
+
+    <!-- Hasil -->
+    <div class="hasil">
+      <p class="judul-hasil">Total yang dibayar</p>
+      <p class="total" id="total">Rp 0</p>
+      <div class="rincian">
+        <span>Harga normal</span>
+        <b id="normal">Rp 0</b>
+      </div>
+      <div class="rincian">
+        <span>Anda hemat</span>
+        <b id="hemat">Rp 0</b>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
